@@ -13,8 +13,8 @@ mod tui;
 
 use ticker_worker::TickerWorker;
 
+use crate::config::Args;
 use crate::tui::tui;
-use crate::{config::Args};
 
 #[tokio::main]
 async fn main() {

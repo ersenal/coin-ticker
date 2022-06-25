@@ -53,7 +53,7 @@ impl TickerWorker {
                         let _ = self.tx.try_send(data);
                     }
                 }
-                Message::Binary(_) | Message::Ping(_) | Message::Pong(_) => {}
+                Message::Binary(_) | Message::Ping(_) | Message::Pong(_) | Message::Frame(_) => {}
                 Message::Close(_) => break,
             };
         }
